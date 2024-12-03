@@ -7,6 +7,9 @@
 ### Project Description:
 The **MedPlus Clone** project aims to recreate the main features of the MedPlus app, which helps users search for medicines, place orders, and get them delivered to their homes. The project focuses on building an easy-to-use app with features like uploading prescriptions, searching for medicines, and tracking orders
 
+### GitHub Issue:
+[Record Of Approval](https://github.com/IIITLucknowSWEngg/Assignment/issues/30)
+
 
 ### Team Members
 | Name                 | Branch       | Roll No.     | Email Address                       | Username      |
