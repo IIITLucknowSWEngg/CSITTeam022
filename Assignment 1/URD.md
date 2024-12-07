@@ -48,10 +48,6 @@ The MedPlus Clone platform will consist of a mobile application and a web interf
 - **Multiple Payment Methods**: The platform must support payment through credit/debit cards, UPI, mobile wallets, and net banking.
 - **Payment Confirmation**: After each transaction, users should receive a payment confirmation via email or SMS.
 
-### **4.5 Consultation Services**
-- **Book a Consultation**: Users should be able to book consultations with doctors directly through the platform.
-- **Video Call Integration**: The platform should support video consultation for remote doctor-patient interaction.
-- **Prescription Management**: Doctors should be able to generate and share digital prescriptions with patients via the app.
   
 ### **4.6 Pharmacy and Medicine Management**
 - **Pharmacy Registration**: Pharmacies must be able to register on the platform and list available products.
