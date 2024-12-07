@@ -29,29 +29,29 @@ The Cross-Reference Matrix links functional and non-functional requirements spec
 ### 1. *System Context Diagram*:
    - Describes the interaction of all actors (Customer, Admin, Pharmacy Partners) with the MedPlus Clone system, including external systems like Payment Gateway and Delivery Tracking API.
    - *Relevant Diagrams*: 
-     - ![System Context Diagram: MedPlus Clone](sys_context.png)
+    ![System Context Diagram: MedPlus Clone](Images_Used/sys_context.png)
 
 ### 2. *Container Diagram*:
    - Provides a high-level view of the system architecture, including containers like the frontend application, backend API service, and database.
    - *Relevant Diagrams*:
-     - ![Container Diagram: MedPlus Clone](container_diagram.png)
+    ![Container Diagram: MedPlus Clone](Images_Used/container_diagram.png)
 
 ### 3. *Component Diagrams*:
    - Describes the components within each container, such as Medicine Search, Order Management, Payment Gateway, Admin Dashboard, etc., and their interactions with actors (Customer, Admin, Pharmacy Partner).
    - *Relevant Diagrams*:
-     - ![Component Diagram: MedPlus Clone (Admin)](adm_comp.png)
-     - ![Component Diagram: MedPlus Clone (Customer)](cust_comp.png)
-     - ![Component Diagram: MedPlus Clone (Pharmacy Partner)](pharm_comp.png)
+    ![Component Diagram: MedPlus Clone (Admin)](Images_Used/adm_comp.png)
+    ![Component Diagram: MedPlus Clone (Customer)](Images_Used/cust_comp.png)
+    ![Component Diagram: MedPlus Clone (Pharmacy Partner)](Images_Used/pharm_comp.png)
 
 ### 4. *Deployment Diagram*:
    - Describes the physical deployment of the system components, including the backend service, database, external services (Payment Gateway, Notification Service), and user-facing applications (Web, Android, iOS).
    - *Relevant Diagrams*:
-     - ![Deployment Diagram: MedPlus Clone](Images_Used/deployment_diagram.png)
+    ![Deployment Diagram: MedPlus Clone](Images_Used/deployment_diagram.png)
 
 ### 5. *ER Diagram*:
    - Describes the database schema, including entities like Users, Orders, Medicines, Inventory, and Prescriptions.
    - *Relevant Diagrams*:
-     - ![ER Diagram: MedPlus Clone](ER_diagram.png)
+    ![ER Diagram: MedPlus Clone](Images_Used/ER_diagram.png)
 
 ---
 
