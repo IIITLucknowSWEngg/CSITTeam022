@@ -1,6 +1,6 @@
 ## 1. System Context diagram
 
-![System Context Diagram](sys_context.png)
+![System Context Diagram](Images_Used/sys_context.png)
 
 ```plantuml
 
@@ -56,7 +56,7 @@ rectangle "External Systems" {
 
 ## 2. Container Diagram
 
-![Container Diagram](container_diagram.png)
+![Container Diagram](Images_Used/container_diagram.png)
 
 ```plantuml
 
@@ -126,7 +126,7 @@ PharmacyPartner --> DeliverySystem : Handles deliveries
 
 ### 3.1 Customer Component Diagram
 
-![Customer Component Diagram](cust_comp.png)
+![Customer Component Diagram](Images_Used/cust_comp.png)
 
 ```plantuml
 
@@ -160,7 +160,7 @@ TrackingAndReviews --> ReviewManagement : Sends Reviews
 
 ### 3.2 Admin Component Diagram
 
-![Admin Component diagram](adm_comp.png)
+![Admin Component diagram](Images_Used/adm_comp.png)
 
 ```plantuml
 
@@ -195,7 +195,7 @@ Analytics --> ReviewManagement : Gathers Feedback Insights
 
 ### 3.3 Pharmacy Partner Component Diagram
 
-![Pharmacy Partner Component Diagram](pharm_comp.png)
+![Pharmacy Partner Component Diagram](Images_Used/pharm_comp.png)
 
 ```plantuml
 
@@ -225,7 +225,7 @@ DeliverySystem --> PrescriptionManagement : Handles Prescription Orders
 
 ## 4. Deployment Diagram
 
-![Deployment Diagram](deployment_diagram.png)
+![Deployment Diagram](Images_Used/deployment_diagram.png)
 
 ```plantuml
 
@@ -287,7 +287,7 @@ DeliverySystem --> BackendAPI : Manages Delivery Info
 
 ## 5. ER Diagram
 
-![ER Diagram](ER_diagram.png)
+![ER Diagram](Images_Used/ER_diagram.png)
 
 ```plantuml
 
