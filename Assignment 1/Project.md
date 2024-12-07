@@ -47,28 +47,6 @@ The *MedPlus Clone* project replicates the main features of the MedPlus app, whi
 
 ---
 
-## API Documentation
-
-- *POST /auth/register*  
-  Register a new user.
-  
-- *POST /auth/login*  
-  Authenticate an existing user.
-  
-- *GET /medicines*  
-  Fetch a list of available medicines.
-  
-- *GET /medicines/:id*  
-  Get detailed information for a specific medicine.
-  
-- *POST /orders*  
-  Place a new order.
-
-- *GET /orders/:id*  
-  Retrieve order details.
-
----
-
 ## Database Schema
 
 ### User Collection
