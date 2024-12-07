@@ -70,42 +70,74 @@ The project adheres to agile development principles, ensuring continuous improve
 
 ---
 
-## **Database Schema**
+## Database Schema
 
 ### User Collection
 
 | Field         | Type      | Description                          |
 |---------------|-----------|--------------------------------------|
-| _id         | ObjectId  | Unique identifier                    |
-| name        | String    | User's full name                     |
-| email       | String    | User's email address                 |
-| password    | String    | Encrypted user password              |
-| role        | String    | Role of the user (e.g., customer)    |
-| orders      | Array     | Array of order IDs                   |
-| created_at  | Date      | Account creation date                |
+| _id           | ObjectId  | Unique identifier                    |
+| name          | String    | User's full name                     |
+| email         | String    | User's email address                 |
+| password      | String    | Encrypted user password              |
+| role          | String    | Role of the user (e.g., customer)    |
+| orders        | Array     | Array of order IDs                   |
+| created_at    | Date      | Account creation date                |
 
-### Pharmacy Collection
+### Pharmacy Partner Collection
 
 | Field         | Type      | Description                          |
 |---------------|-----------|--------------------------------------|
-| _id         | ObjectId  | Unique identifier                    |
-| name        | String    | Pharmacy name                        |
-| location    | String    | Pharmacy location                    |
-| medicines   | Array     | Array of medicine IDs available      |
-| owner       | ObjectId  | User ID of the pharmacy owner        |
-| created_at  | Date      | Pharmacy registration date           |
+| _id           | ObjectId  | Unique identifier                    |
+| name          | String    | Pharmacy name                        |
+| location      | String    | Pharmacy location                    |
+| medicines     | Array     | Array of medicine IDs available      |
+| owner_id      | ObjectId  | User ID of the pharmacy owner        |
+| created_at    | Date      | Pharmacy registration date           |
+
+### Medicine Collection
+
+| Field         | Type      | Description                          |
+|---------------|-----------|--------------------------------------|
+| _id           | ObjectId  | Unique identifier                    |
+| name          | String    | Medicine name                        |
+| description   | String    | Description of the medicine          |
+| category      | String    | Category or type (e.g., painkiller)  |
+| price         | Number    | Medicine price                       |
+| stock         | Number    | Quantity available in inventory      |
+| created_at    | Date      | Date added to inventory              |
 
 ### Order Collection
 
 | Field         | Type      | Description                          |
 |---------------|-----------|--------------------------------------|
-| _id         | ObjectId  | Unique identifier                    |
-| user        | ObjectId  | User ID who placed the order         |
-| pharmacy    | ObjectId  | Pharmacy ID where the order was placed |
-| items       | Array     | Array of medicine IDs in the order   |
-| total       | Number    | Total price of the order             |
-| status      | String    | Current order status (e.g., pending, shipped, delivered) |
-| created_at  | Date      | Order creation date                  |
+| _id           | ObjectId  | Unique identifier                    |
+| user_id       | ObjectId  | ID of the user who placed the order  |
+| pharmacy_id   | ObjectId  | ID of the pharmacy fulfilling the order |
+| items         | Array     | Array of medicine IDs in the order   |
+| total         | Number    | Total price of the order             |
+| status        | String    | Current order status (e.g., pending, shipped, delivered) |
+| created_at    | Date      | Order creation date                  |
+
+### Prescription Collection
+
+| Field         | Type      | Description                          |
+|---------------|-----------|--------------------------------------|
+| _id           | ObjectId  | Unique identifier                    |
+| user_id       | ObjectId  | ID of the user uploading the prescription |
+| image_path    | String    | File path or URL to the prescription image |
+| created_at    | Date      | Prescription upload date             |
+
+### Review Collection
+
+| Field         | Type      | Description                          |
+|---------------|-----------|--------------------------------------|
+| _id           | ObjectId  | Unique identifier                    |
+| user_id       | ObjectId  | ID of the user who left the review   |
+| medicine_id   | ObjectId  | Medicine being reviewed              |
+| rating        | Number    | Rating given by the user (1-5)       |
+| comment       | String    | Optional user review comment         |
+| created_at    | Date      | Review creation date                 |
 
 ---
 
