@@ -2,6 +2,7 @@
 
 ![System Context Diagram](sys_context.png)
 
+```plantuml
 @startuml
 title System Context Diagram: MedPlus Clone
 
