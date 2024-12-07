@@ -49,25 +49,25 @@ The MedPlus Clone platform will consist of a mobile application and a web interf
 - **Payment Confirmation**: After each transaction, users should receive a payment confirmation via email or SMS.
 
   
-### **4.6 Pharmacy and Medicine Management**
+### **4.5 Pharmacy and Medicine Management**
 - **Pharmacy Registration**: Pharmacies must be able to register on the platform and list available products.
 - **Inventory Management**: Pharmacies should be able to update inventory, including prices and availability.
 - **Order Fulfillment**: Pharmacies should receive notifications when an order is placed and fulfill it based on availability.
 
-### **4.7 Delivery and Logistics**
+### **4.6 Delivery and Logistics**
 - **Delivery Scheduling**: Users should be able to schedule deliveries at convenient times.
 - **Real-Time GPS Tracking**: Integration with a GPS system to allow users to track their orders in real-time.
 - **Delivery Person Information**: Users should have access to the contact details of the delivery person.
   
-### **4.8 Feedback and Ratings**
+### **4.7 Feedback and Ratings**
 - **Rating System**: Users should be able to rate pharmacies and doctors after consultations.
 - **Review System**: Users can leave detailed reviews and provide feedback about medicines, services, and deliveries.
   
-### **4.9 Notifications and Alerts**
+### **4.8 Notifications and Alerts**
 - **Order Notifications**: Users must be notified about order confirmation, dispatch, and delivery status via SMS or push notifications.
 - **Prescription Reminders**: If applicable, users should receive reminders for prescription refills or follow-up consultations.
 
-### **4.10 Reports and Analytics**
+### **4.9 Reports and Analytics**
 - **User Data Analytics**: Administrators and pharmacies can view analytics related to user activity, popular products, and sales trends.
 - **Order Reports**: Admins should have access to reports detailing order history, payment statuses, and delivery status.
 
