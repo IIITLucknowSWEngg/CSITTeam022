@@ -107,6 +107,9 @@ The database schema includes tables for Users, Medicines, Orders, Prescriptions,
 | **Orders**     | Tracks customer orders    | order_id (PK), user_id (FK), total |  
 | **Prescriptions** | Stores prescription data | prescription_id (PK), image_path |  
 | **Reviews**    | Stores user reviews       | review_id (PK), rating, user_id (FK) |  
+| **Pharmacy_Partners**  | Stores Pharmacy partners information | pharmacy_partner_id (PK), name, address |
+| **Inventory** | Stores medicine stock data | inventory_id (PK), medicine_id (FK), stock_quantity  |
+| **Delivery Tracking** |Tracks Delivery status | tracking_id (PK), order_id (FK), location |
 
 ---
 
