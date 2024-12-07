@@ -49,6 +49,7 @@ rectangle "External Systems" {
 [Order Management] --> [Notification Service] : Sends order notifications
 [Prescription Upload] --> [Notification Service] : Sends prescription updates
 @enduml
+```
 
 
 ---
