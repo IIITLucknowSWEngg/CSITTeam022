@@ -70,26 +70,26 @@ The system design is based on a layered architecture:
 
 #### 3.2.1 System Context Diagram  
 The System Context Diagram depicts the system's interactions with external entities.  
-![System Context Diagram](Images_Used\sys_context.png)  
+![System Context Diagram](Images_Used/sys_context.png)  
 
 #### 3.2.2 Container Diagram  
 The Container Diagram provides an overview of the system’s major containers and their interactions.  
-![Container Diagram](Images_Used\container_diagram.png)  
+![Container Diagram](Images_Used/container_diagram.png)  
 
 #### 3.2.3 Component Diagrams  
 
 - **Users Component Diagram**  
-![Users Component Diagram](Images_Used\cust_comp.png)  
+![Users Component Diagram](Images_Used/cust_comp.png)  
 
 - **Admin Component Diagram**  
-![Admin Component Diagram](Images_Used\adm_comp.png)  
+![Admin Component Diagram](Images_Used/adm_comp.png)  
 
 - **Pharmacy Partner Component Diagram**  
-![Pharmacy Partner Component Diagram](Images_Used\pharm_comp.png)  
+![Pharmacy Partner Component Diagram](Images_Used/pharm_comp.png) 
 
 #### 3.2.4 Deployment Diagram  
 The Deployment Diagram describes the physical deployment of system components.  
-![Deployment Diagram](Images_Used\deployment_diagram.png)  
+![Deployment Diagram](Images_Used/deployment_diagram.png)  
 
 ---
 
@@ -97,7 +97,7 @@ The Deployment Diagram describes the physical deployment of system components.
 
 ### 4.1 ER Diagram  
 The database schema includes tables for Users, Medicines, Orders, Prescriptions, Reviews, and more.  
-![ER Diagram](CSITTeam022\Assignment 2\Images_Used\ER_diagram.png)  
+![ER Diagram](Images_Used/ER_diagram.png)  
 
 ### 4.2 Schema Design  
 | Table Name     | Description               | Key Columns                   |  
