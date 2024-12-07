@@ -46,7 +46,7 @@ The Cross-Reference Matrix links functional and non-functional requirements spec
 ### 4. *Deployment Diagram*:
    - Describes the physical deployment of the system components, including the backend service, database, external services (Payment Gateway, Notification Service), and user-facing applications (Web, Android, iOS).
    - *Relevant Diagrams*:
-     - ![Deployment Diagram: MedPlus Clone](deployment_diagram.png)
+     - ![Deployment Diagram: MedPlus Clone](Images_Used/deployment_diagram.png)
 
 ### 5. *ER Diagram*:
    - Describes the database schema, including entities like Users, Orders, Medicines, Inventory, and Prescriptions.
