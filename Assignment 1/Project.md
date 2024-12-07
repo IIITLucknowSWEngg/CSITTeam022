@@ -1,12 +1,35 @@
-# MedPlus Clone - E-commerce Medicine Delivery App
 
-## Overview
+# **MedPlus Clone - E-commerce Medicine Delivery App**
 
-The *MedPlus Clone* project replicates the main features of the MedPlus app, which offers online medicine delivery services. This platform allows users to search for medicines, upload prescriptions, place orders, and track deliveries, all through a user-friendly interface. The app caters to both customers and pharmacy owners and includes features to manage medicines, orders, and user interactions efficiently. The goal of this project is to build a functional and scalable application that simplifies the process of buying medicines online while ensuring a seamless experience for users and pharmacy owners.
+## **Overview**
+
+The *MedPlus Clone* project replicates the main features of the MedPlus app, offering online medicine delivery services. This platform allows users to search for medicines, upload prescriptions, place orders, and track deliveries through a user-friendly interface. The app caters to customers, admin users, and **pharmacy partners**, with features to manage medicines, orders, and user interactions efficiently. The project aims to build a functional and scalable application that simplifies the process of buying medicines online while ensuring a seamless experience for all stakeholders.
 
 ---
 
-## Key Features
+## **Scope**
+
+The MedPlus Clone application is designed to cater to the diverse needs of the healthcare and e-commerce sectors. It ensures the following:  
+- **Accessible Healthcare**: Users can quickly order medicines online from verified pharmacies.  
+- **Seamless Integration**: Includes pharmacy partners who manage inventory and delivery logistics efficiently.  
+- **Scalability**: Built to handle a growing number of users and pharmacies over time.  
+- **Customizable Features**: Provides options for future integration with health insurance, online consultations, and pharmacy subscriptions.  
+- **Platform Independence**: Supports both mobile and web platforms to reach a wider audience.  
+
+---
+
+## **Methodology**
+
+The project adheres to agile development principles, ensuring continuous improvement and delivery.  
+- **Planning**: Based on industry-standard guidelines like SWEBOK v4 and agile best practices.  
+- **Design**: Focus on modularity, scalability, and user-centered design.  
+- **Development**: Fast-paced iterative releases with continuous integration and testing.  
+- **Testing**: Involves behavior-driven development (BDD) with automated tests using frameworks like Cucumber and Chai.  
+- **Deployment**: Continuous deployment pipeline with performance monitoring.
+
+---
+
+## **Key Features**
 
 ### User Features:
 - *User Authentication*: Users can securely sign up and log in to their accounts. The app ensures safe authentication through encrypted password storage and login procedures.
@@ -21,7 +44,7 @@ The *MedPlus Clone* project replicates the main features of the MedPlus app, whi
 
 - *Rate and Review*: Users can leave feedback on medicines and pharmacies they’ve used. Ratings and reviews help other users make informed decisions and foster trust within the platform.
 
-### Pharmacy Features:
+### Pharmacy Partner Features:
 - *Pharmacy Registration*: Pharmacies can register on the platform by creating a profile, providing necessary business information such as location, available medicines, and contact details. Once registered, they can manage their listings easily.
 
 - *Manage Medicine Stock*: Pharmacy owners can add, update, or remove medicines from their inventory. The app ensures they have a streamlined interface for maintaining the latest stock levels.
@@ -39,7 +62,7 @@ The *MedPlus Clone* project replicates the main features of the MedPlus app, whi
 
 ---
 
-## Tech Stack
+## **Tech Stack**
 
 - *Frontend*: React.js, React Native, Tailwind CSS/Bootstrap  
 - *Backend*: Node.js, Express.js, MongoDB  
@@ -53,40 +76,72 @@ The *MedPlus Clone* project replicates the main features of the MedPlus app, whi
 
 | Field         | Type      | Description                          |
 |---------------|-----------|--------------------------------------|
-| _id         | ObjectId  | Unique identifier                    |
-| name        | String    | User's full name                     |
-| email       | String    | User's email address                 |
-| password    | String    | Encrypted user password              |
-| role        | String    | Role of the user (e.g., customer)    |
-| orders      | Array     | Array of order IDs                   |
-| created_at  | Date      | Account creation date                |
+| _id           | ObjectId  | Unique identifier                    |
+| name          | String    | User's full name                     |
+| email         | String    | User's email address                 |
+| password      | String    | Encrypted user password              |
+| role          | String    | Role of the user (e.g., customer)    |
+| orders        | Array     | Array of order IDs                   |
+| created_at    | Date      | Account creation date                |
 
-### Pharmacy Collection
+### Pharmacy Partner Collection
 
 | Field         | Type      | Description                          |
 |---------------|-----------|--------------------------------------|
-| _id         | ObjectId  | Unique identifier                    |
-| name        | String    | Pharmacy name                        |
-| location    | String    | Pharmacy location                    |
-| medicines   | Array     | Array of medicine IDs available      |
-| owner       | ObjectId  | User ID of the pharmacy owner        |
-| created_at  | Date      | Pharmacy registration date           |
+| _id           | ObjectId  | Unique identifier                    |
+| name          | String    | Pharmacy name                        |
+| location      | String    | Pharmacy location                    |
+| medicines     | Array     | Array of medicine IDs available      |
+| owner_id      | ObjectId  | User ID of the pharmacy owner        |
+| created_at    | Date      | Pharmacy registration date           |
+
+### Medicine Collection
+
+| Field         | Type      | Description                          |
+|---------------|-----------|--------------------------------------|
+| _id           | ObjectId  | Unique identifier                    |
+| name          | String    | Medicine name                        |
+| description   | String    | Description of the medicine          |
+| category      | String    | Category or type (e.g., painkiller)  |
+| price         | Number    | Medicine price                       |
+| stock         | Number    | Quantity available in inventory      |
+| created_at    | Date      | Date added to inventory              |
 
 ### Order Collection
 
 | Field         | Type      | Description                          |
 |---------------|-----------|--------------------------------------|
-| _id         | ObjectId  | Unique identifier                    |
-| user        | ObjectId  | User ID who placed the order         |
-| pharmacy    | ObjectId  | Pharmacy ID where the order was placed |
-| items       | Array     | Array of medicine IDs in the order   |
-| total       | Number    | Total price of the order             |
-| status      | String    | Current order status (e.g., pending, shipped, delivered) |
-| created_at  | Date      | Order creation date                  |
+| _id           | ObjectId  | Unique identifier                    |
+| user_id       | ObjectId  | ID of the user who placed the order  |
+| pharmacy_id   | ObjectId  | ID of the pharmacy fulfilling the order |
+| items         | Array     | Array of medicine IDs in the order   |
+| total         | Number    | Total price of the order             |
+| status        | String    | Current order status (e.g., pending, shipped, delivered) |
+| created_at    | Date      | Order creation date                  |
+
+### Prescription Collection
+
+| Field         | Type      | Description                          |
+|---------------|-----------|--------------------------------------|
+| _id           | ObjectId  | Unique identifier                    |
+| user_id       | ObjectId  | ID of the user uploading the prescription |
+| image_path    | String    | File path or URL to the prescription image |
+| created_at    | Date      | Prescription upload date             |
+
+### Review Collection
+
+| Field         | Type      | Description                          |
+|---------------|-----------|--------------------------------------|
+| _id           | ObjectId  | Unique identifier                    |
+| user_id       | ObjectId  | ID of the user who left the review   |
+| medicine_id   | ObjectId  | Medicine being reviewed              |
+| rating        | Number    | Rating given by the user (1-5)       |
+| comment       | String    | Optional user review comment         |
+| created_at    | Date      | Review creation date                 |
 
 ---
 
-## Limitations
+## **Limitations**
 
 - *Speech Recognition*: Some speech-to-text features, such as prescription uploads, may not always be accurate, especially with diverse accents or noisy environments.
   
@@ -96,6 +151,7 @@ The *MedPlus Clone* project replicates the main features of the MedPlus app, whi
 
 ---
 
-## Conclusion
+## **Conclusion**
 
 The MedPlus Clone project aims to provide a comprehensive e-commerce platform for the online delivery of medicines. It integrates key functionalities for both users and pharmacies, including search, prescription uploads, order placement, and tracking. The tech stack focuses on building a scalable, secure, and responsive app, ensuring a seamless experience for all stakeholders. This project provides a solid foundation for exploring and implementing full-stack development in the e-commerce and healthcare domains.
+
