@@ -1,8 +1,8 @@
 # System Design Document  
 ## MedPlus Clone  
 **Version:** 1.0  
-**Prepared By:** [Your Team Name]  
-**Date:** [Insert Date]  
+**Prepared By:** ArchiteKTs  
+**Date:** 04-12-2024  
 
 ---
 
@@ -97,7 +97,7 @@ The Deployment Diagram describes the physical deployment of system components.
 
 ### 4.1 ER Diagram  
 The database schema includes tables for Users, Medicines, Orders, Prescriptions, Reviews, and more.  
-![ER Diagram](Images_Used/ER_Diagram.png)  
+![ER Diagram](CSITTeam022\Assignment 2\Images_Used\ER_diagram.png)  
 
 ### 4.2 Schema Design  
 | Table Name     | Description               | Key Columns                   |  
