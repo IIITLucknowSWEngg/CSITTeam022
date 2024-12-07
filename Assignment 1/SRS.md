@@ -78,7 +78,6 @@ The MedPlus Clone app will feature the following functionalities:
 
 ### 3.5 Payment Processing
 - *Payment Methods*: Multiple payment options, including credit/debit cards, UPI, net banking, and wallets.
-- *Zomato Pay Integration*: A secure and quick payment process with instant payment confirmation.
 - *Payment Confirmation*: Users receive order summaries and payment receipts.
 
 ### 3.6 Admin Dashboard
