@@ -3,6 +3,7 @@
 ![System Context Diagram](sys_context.png)
 
 ```plantuml
+
 @startuml
 title System Context Diagram: MedPlus Clone
 
@@ -50,7 +51,6 @@ rectangle "External Systems" {
 [Prescription Upload] --> [Notification Service] : Sends prescription updates
 @enduml
 ```
-
 
 ---
 
