@@ -382,7 +382,7 @@ entity "Delivery_Tracking" {
 
 ' Relationships
 Users ||--o{ Orders : places
-Users ||--o{ Pharmacy_Partners : Pick-up
+Users ||--o{ Pharmacy_Partners : pick-up
 Orders ||--o{ Order_Items : contains
 Order_Items }o--|| Medicines : references
 Orders ||--o| Prescriptions : "if required"
