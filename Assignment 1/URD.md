@@ -16,11 +16,18 @@ The MedPlus Clone platform will consist of a mobile application and a web interf
 
 ## **3. Stakeholders**
 
-- **End Users (Patients)**: Users who wish to purchase medicines, book consultations, and access health-related services.
-- **Pharmacy Partners**: Pharmacies that list medicines on the platform for sale.
-- **Delivery Personnel**: Individuals responsible for delivering medicine orders.
-- **Administrators**: Platform administrators who manage users, orders, and content.
-- **Customer Support**: Team providing assistance to users in case of issues or inquiries.
+### **3.1 External Stakeholders**
+- **End Users (Customers)**: Individuals who search for medicines, make purchases, upload prescriptions, and track orders.
+- **Admin Users**: Admins who manage the platform, including order management, inventory, user verification, and prescription approvals.
+- **Pharmacy Partners**: Pharmacies that provide medicines and ensure order fulfillment.
+- **Payment Providers**: External entities that process payments through various methods (e.g., UPI, credit cards).
+- **Regulatory Authorities**: Entities ensuring the platform complies with health-related regulations and standards.
+  
+### **3.2 Internal Stakeholders**
+- **Product Team**: Responsible for defining features, design, and overall product vision.
+- **Development Team**: Developers responsible for building and maintaining the system.
+- **Quality Assurance (QA) Team**: Testers who ensure the product meets the requirements and is bug-free.
+- **Customer Support**: Team handling user queries, issues, and support tickets.
 
 ---
 
