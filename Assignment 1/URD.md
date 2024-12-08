@@ -2,7 +2,7 @@
 
 ## **1. Introduction**
 
-The MedPlus Clone project is a digital health platform that offers users the ability to browse and purchase medicines, schedule home deliveries, and consult with medical professionals. This document outlines the user requirements for the MedPlus Clone system, which includes functionalities designed to ensure seamless and efficient user interactions with the platform.
+The MedPlus Clone project is a digital health platform that offers users the ability to browse and purchase medicines and schedule home deliveries. This document outlines the user requirements for the MedPlus Clone system, which includes functionalities designed to ensure seamless and efficient user interactions with the platform.
 
 The goal of the MedPlus Clone is to provide an easy-to-use, secure, and scalable platform for users to access health-related services online.
 
@@ -10,14 +10,13 @@ The goal of the MedPlus Clone is to provide an easy-to-use, secure, and scalable
 
 ## **2. Scope**
 
-The MedPlus Clone platform will consist of a mobile application and a web interface with features for customers, medical professionals, pharmacies, and administrators. It will support multiple user roles and provide functionality for medicine search, order placement, payment processing, prescription management, and delivery tracking.
+The MedPlus Clone platform will consist of a mobile application and a web interface with features for customers, pharmacies, and administrators. It will support multiple user roles and provide functionality for medicine search, order placement, payment processing, prescription management, and delivery tracking.
 
 ---
 
 ## **3. Stakeholders**
 
 - **End Users (Patients)**: Users who wish to purchase medicines, book consultations, and access health-related services.
-- **Medical Professionals**: Doctors and health experts offering consultation and prescription services.
 - **Pharmacy Partners**: Pharmacies that list medicines on the platform for sale.
 - **Delivery Personnel**: Individuals responsible for delivering medicine orders.
 - **Administrators**: Platform administrators who manage users, orders, and content.
@@ -30,7 +29,7 @@ The MedPlus Clone platform will consist of a mobile application and a web interf
 ### **4.1 User Authentication and Management**
 - **Registration and Login**: Users must be able to register on the platform using their email, phone number, or social media accounts.
 - **Profile Management**: Users should have access to update personal information, view order history, and manage prescriptions.
-- **Role-based Access Control**: Different user roles (customer, doctor, pharmacy, admin) will have specific access levels and functionalities.
+- **Role-based Access Control**: Different user roles (customer, pharmacy, admin) will have specific access levels and functionalities.
   
 ### **4.2 Product and Medicine Search**
 - **Search Functionality**: Users must be able to search for medicines by name, category, or ailment.
@@ -60,12 +59,12 @@ The MedPlus Clone platform will consist of a mobile application and a web interf
 - **Delivery Person Information**: Users should have access to the contact details of the delivery person.
   
 ### **4.7 Feedback and Ratings**
-- **Rating System**: Users should be able to rate pharmacies and doctors after consultations.
+- **Rating System**: Users should be able to rate pharmacies after delivery/pickup.
 - **Review System**: Users can leave detailed reviews and provide feedback about medicines, services, and deliveries.
   
 ### **4.8 Notifications and Alerts**
 - **Order Notifications**: Users must be notified about order confirmation, dispatch, and delivery status via SMS or push notifications.
-- **Prescription Reminders**: If applicable, users should receive reminders for prescription refills or follow-up consultations.
+- **Prescription Reminders**: If applicable, users should receive reminders for prescription refills.
 
 ### **4.9 Reports and Analytics**
 - **User Data Analytics**: Administrators and pharmacies can view analytics related to user activity, popular products, and sales trends.
@@ -117,7 +116,7 @@ The MedPlus Clone platform will consist of a mobile application and a web interf
 
 ### **7.1 Assumptions**
 - Users will have access to internet-enabled devices to interact with the platform.
-- Pharmacies and medical professionals will have the necessary infrastructure to fulfill orders and consultations.
+- Pharmacies will have the necessary infrastructure to fulfill orders and consultations.
 - Users will be familiar with basic e-commerce functions such as searching, selecting, and purchasing products online.
 
 ### **7.2 Constraints**
