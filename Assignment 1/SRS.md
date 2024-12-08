@@ -20,12 +20,13 @@ This system will be compatible with Android, iOS, and Web platforms.
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
 
-- *User*: The person accessing the MedPlus Clone app (Customer).
-- *Admin*: The person managing the back-end operations of the app (Admin User).
-- *Prescription*: A digital copy of a user’s medicine prescription.
-- *Medicine Search*: A feature allowing users to search for available medicines based on name or category.
-- *Order Tracking*: A feature to track the status of the placed orders in real-time.
-- *API*: Application Programming Interface for communication between frontend and backend services.
+- **User**: The person accessing the MedPlus Clone app (Customer).
+- **Admin**: The person managing the back-end operations of the app (Admin User).
+- **Pharmacy Partner**: Partner pharmacies that supply medicines and handle logistics for delivery or pickup.
+- **Prescription**: A digital copy of a user’s medicine prescription.
+- **Medicine Search**: A feature allowing users to search for available medicines based on name or category.
+- **Order Tracking**: A feature to track the status of the placed orders in real-time.
+- **API**: Application Programming Interface for communication between frontend and backend services.
 
 ### 1.4 References
 - *Swebok V4*: Software Engineering Body of Knowledge (Swebok) version 4 guidelines.
@@ -36,116 +37,148 @@ This system will be compatible with Android, iOS, and Web platforms.
 ## 2. System Overview
 
 ### 2.1 Product Perspective
-The MedPlus Clone will act as an e-commerce platform for purchasing medicines, similar to the original MedPlus app. The system will consist of three primary modules:
+The MedPlus Clone will act as an e-commerce platform for purchasing medicines, similar to the original MedPlus app. The system will consist of four primary modules:
 
-1. *Customer App (Frontend)*: Users will interact with the platform to search for medicines, place orders, upload prescriptions, and track their deliveries.
-2. *Admin Panel (Backend)*: Admins will manage medicine catalogs, process orders, and track user activities.
-3. *Database*: A centralized storage system to store information about users, orders, prescriptions, and medicines.
+1. **Customer App (Frontend)**: Users will interact with the platform to search for medicines, place orders, upload prescriptions, and track their deliveries.
+2. **Admin Panel (Backend)**: Admins will manage medicine catalogs, process orders, and track user activities.
+3. **Pharmacy Partner Portal**: A dedicated portal for pharmacies to manage stock, process orders, and handle logistics.
+4. **Database**: A centralized storage system to store information about users, orders, prescriptions, medicines, and partner pharmacies.
 
 ### 2.2 Product Features
 The MedPlus Clone app will feature the following functionalities:
-- *Medicine Search and Discovery*: Users can search for medicines based on their name, category, or usage.
-- *Prescription Upload*: Customers can upload their prescriptions for medicines that require one.
-- *Medicine Order and Delivery*: Users can order medicines and choose between home delivery or pharmacy pickup.
-- *Order Tracking*: Real-time tracking of order statuses.
-- *User Reviews*: Customers can leave ratings and reviews for medicines.
-- *Admin Panel*: Admins can manage inventory, monitor orders, and maintain the medicine catalog.
+- **Medicine Search and Discovery**: Users can search for medicines based on their name, category, or usage.
+- **Prescription Upload**: Customers can upload their prescriptions for medicines that require one.
+- **Medicine Order and Delivery**: Users can order medicines and choose between home delivery or pharmacy pickup.
+- **Order Tracking**: Real-time tracking of order statuses.
+- **User Reviews**: Customers can leave ratings and reviews for medicines.
+- **Admin Panel**: Admins can manage inventory, monitor orders, and maintain the medicine catalog.
+- **Pharmacy Partner Portal**: Enables pharmacy partners to manage inventory, orders, and logistics.
 
 ---
 
 ## 3. Functional Requirements
 
 ### 3.1 User Registration and Authentication
-- *Sign Up and Login*: Users can register through their email, phone number, or social media accounts.
-- *Profile Management*: Users can update their personal details, including delivery addresses, and track order history.
-- *Authentication*: Multi-factor authentication for enhanced security during login.
+- **Sign Up and Login**: Users can register through their email, phone number, or social media accounts.
+- **Profile Management**: Users can update their personal details, including delivery addresses, and track order history.
+- **Authentication**: Multi-factor authentication for enhanced security during login.
 
 ### 3.2 Medicine Search and Discovery
-- *Search Functionality*: Users can search for medicines based on name, category, or disease.
-- *Filters*: Apply filters based on price, manufacturer, and availability.
-- *Medicine Information*: View details such as dosage, uses, price, availability, and reviews.
+- **Search Functionality**: Users can search for medicines based on name, category, or disease.
+- **Filters**: Apply filters based on price, manufacturer, and availability.
+- **Medicine Information**: View details such as dosage, uses, price, availability, and reviews.
 
 ### 3.3 Order Management
-- *Add to Cart*: Users can add medicines to their cart and modify quantities.
-- *Order Placement*: Choose delivery or pickup, and enter shipping details.
-- *Order Confirmation*: Instant confirmation of orders through email/SMS.
-- *Order Tracking*: Track the order status, including dispatched, in-transit, and delivered stages.
+- **Add to Cart**: Users can add medicines to their cart and modify quantities.
+- **Order Placement**: Choose delivery or pickup, and enter shipping details.
+- **Order Confirmation**: Instant confirmation of orders through email/SMS.
+- **Order Tracking**: Track the order status, including dispatched, in-transit, and delivered stages.
 
 ### 3.4 Prescription Upload
-- *Prescription Submission*: Users can upload prescriptions for medicines that require one.
-- *Prescription Verification*: Admins verify prescriptions before processing orders.
-- *Prescription History*: Users can view past prescriptions and related orders.
+- **Prescription Submission**: Users can upload prescriptions for medicines that require one.
+- **Prescription Verification**: Admins verify prescriptions before processing orders.
+- **Prescription History**: Users can view past prescriptions and related orders.
 
 ### 3.5 Payment Processing
-- *Payment Methods*: Multiple payment options, including credit/debit cards, UPI, net banking, and wallets.
-- *Payment Confirmation*: Users receive order summaries and payment receipts.
+- **Payment Methods**: Multiple payment options, including credit/debit cards, UPI, net banking, and wallets.
+- **Payment Confirmation**: Users receive order summaries and payment receipts.
 
 ### 3.6 Admin Dashboard
-- *User Management*: Admins can view and manage user accounts.
-- *Inventory Management*: Admins can update stock quantities and details of medicines.
-- *Order Monitoring*: Admins can track and manage orders placed by customers.
-- *Analytics*: Real-time reports on sales, user engagement, and inventory status.
+- **User Management**: Admins can view and manage user accounts.
+- **Inventory Management**: Admins can update stock quantities and details of medicines.
+- **Order Monitoring**: Admins can track and manage orders placed by customers.
+- **Analytics**: Real-time reports on sales, user engagement, and inventory status.
 
 ### 3.7 User Feedback
-- *Ratings*: After order completion, users can rate the medicines they ordered.
-- *Reviews*: Detailed reviews with the ability to upload photos.
-- *Suggestions*: Users can suggest improvements or report issues directly to the app support team.
+- **Ratings**: After order completion, users can rate the medicines they ordered.
+- **Reviews**: Detailed reviews with the ability to upload photos.
+- **Suggestions**: Users can suggest improvements or report issues directly to the app support team.
+
+### 3.8 Pharmacy Partner Portal
+The Pharmacy Partner Portal will provide pharmacies with tools to handle orders and manage inventory.
+
+#### 3.8.1 Partner Registration and Authentication
+- **Registration**: Pharmacies can register with details such as name, address, license number, and contact information.
+- **Authentication**: Partners can log in securely with email and password, with optional multi-factor authentication.
+
+#### 3.8.2 Order Management
+- **Order Notifications**: Receive real-time notifications for new orders.
+- **Order Processing**: Accept or reject orders based on prescription validity and stock availability.
+- **Delivery Management**: Mark orders as ready for delivery or picked up.
+
+#### 3.8.3 Inventory Management
+- **Stock Updates**: Pharmacies can update stock levels for medicines in real time.
+- **Stock Alerts**: Notifications for low-stock or out-of-stock items.
+
+#### 3.8.4 Analytics
+- **Order History**: View a history of fulfilled and pending orders.
+- **Sales Reports**: Access reports on monthly sales, inventory trends, and performance metrics.
+
+#### 3.8.5 Communication
+- **Admin Coordination**: Pharmacies can communicate with admins regarding issues with orders or inventory.
 
 ---
 
 ## 4. Non-Functional Requirements
 
 ### 4.1 Performance
-- *Scalability*: The system must be capable of handling high traffic during peak hours without degradation in performance.
-- *Response Time*: The application should respond to user actions in under 2 seconds.
-- *Load Handling*: The backend should be able to handle thousands of concurrent requests.
+- **Scalability**: The system must be capable of handling high traffic during peak hours without degradation in performance.
+- **Response Time**: The application should respond to user actions in under 2 seconds.
+- **Load Handling**: The backend should be able to handle thousands of concurrent requests.
 
 ### 4.2 Security
-- *Data Encryption*: All sensitive user information, including personal details and payment data, must be encrypted using industry-standard encryption algorithms.
-- *Secure Payment Gateway*: All payment transactions must comply with PCI DSS standards.
-- *Authentication*: Multi-layered security for user and admin authentication.
+- **Data Encryption**: All sensitive user information, including personal details and payment data, must be encrypted using industry-standard encryption algorithms.
+- **Secure Payment Gateway**: All payment transactions must comply with PCI DSS standards.
+- **Authentication**: Multi-layered security for user and admin authentication.
 
 ### 4.3 Usability
-- *User-Friendly Interface*: The app should be intuitive, ensuring that users can easily browse medicines, place orders, and track deliveries.
-- *Cross-Platform Consistency*: Ensure a consistent experience across Android, iOS, and web platforms.
+- **User-Friendly Interface**: The app should be intuitive, ensuring that users can easily browse medicines, place orders, and track deliveries.
+- **Cross-Platform Consistency**: Ensure a consistent experience across Android, iOS, and web platforms.
 
 ### 4.4 Availability
-- *Uptime*: The system should have an uptime of 99.9%, with redundancy and failover mechanisms in place.
-- *Disaster Recovery*: Implement backup and disaster recovery procedures to ensure continuous service.
+- **Uptime**: The system should have an uptime of 99.9%, with redundancy and failover mechanisms in place.
+- **Disaster Recovery**: Implement backup and disaster recovery procedures to ensure continuous service.
 
 ### 4.5 Compatibility
-- *Device Compatibility*: The application should support Android (version 5.0 and up), iOS (version 11 and up), and the web platform on major browsers like Chrome, Firefox, and Safari.
+- **Device Compatibility**: The application should support Android (version 5.0 and up), iOS (version 11 and up), and the web platform on major browsers like Chrome, Firefox, and Safari.
 
 ---
 
 ## 5. System Design
 
 ### 5.1 Architecture
-The system will follow a *client-server architecture*, where the front-end will be responsible for the user interface and interactions, and the backend will handle business logic, database management, and data processing.
+The system will follow a **multi-tier architecture** with dedicated modules for users, admins, and pharmacy partners.
 
 ### 5.2 Database Schema
-The system will utilize a *relational database* to store information related to users, orders, prescriptions, and medicines.
+The system will utilize a **relational database** to store information related to users, orders, prescriptions, medicines, and pharmacies.
 
-*Entities and Relations*:
-- *Users*: Stores user details (ID, name, email, password, address).
-- *Medicines*: Stores medicine details (ID, name, description, price, quantity, manufacturer).
-- *Orders*: Stores order details (Order ID, user ID, medicine IDs, total amount, status).
-- *Prescriptions*: Stores prescription details (Prescription ID, user ID, prescription image, status).
+**Entities and Relations**:
+- **Users**: Stores user details (ID, name, email, password, address).
+- **Medicines**: Stores medicine details (ID, name, description, price, quantity, manufacturer).
+- **Orders**: Stores order details (Order ID, user ID, medicine IDs, total amount, status).
+- **Prescriptions**: Stores prescription details (Prescription ID, user ID, prescription image, status).
+- **Pharmacies**: Stores partner pharmacy details (Pharmacy ID, name, address, contact, license number).
+- **Pharmacy Orders**: Links pharmacy orders to user orders, storing statuses and logistics details.
+- **Inventory**: Tracks stock details for each pharmacy (Medicine ID, Pharmacy ID, quantity available).
 
 ---
 
 ## 6. Additional Considerations
 
 ### 6.1 Third-Party Integrations
-- *Payment Gateway Integration*: Integration with a third-party payment gateway to handle payments.
-- *Tracking APIs*: Integration with third-party delivery tracking services for real-time order tracking.
-- *Push Notifications*: Integration with push notification services to send order updates, offers, and reminders.
+- **Payment Gateway Integration**: Integration with a third-party payment gateway to handle payments.
+- **Tracking APIs**: Integration with third-party delivery tracking services for real-time order tracking.
+- **Push Notifications**: Integration with push notification services to send order updates, offers, and reminders.
 
 ### 6.2 Compliance
-- *Regulatory Compliance*: Ensure the app complies with health and safety regulations for medicine sales.
-- *Privacy Regulations*: The app must adhere to privacy laws such as GDPR for storing user data.
+- **Regulatory Compliance**: Ensure the app complies with health and safety regulations for medicine sales.
+- **Privacy Regulations**: The app must adhere to privacy laws such as GDPR for storing user data.
+
+### 6.3 Pharmacy Partner Integration
+- **Partner APIs**: Provide APIs for pharmacies to integrate their existing inventory systems with the MedPlus Clone.
+- **Performance Monitoring**: Tools for pharmacies to monitor order fulfillment times and ratings.
 
 ---
 
 ## 7. Conclusion
-The MedPlus Clone aims to provide an efficient and user-friendly platform for customers to purchase medicines, upload prescriptions, and track orders. By integrating essential features such as secure payment methods, real-time order tracking, and an admin dashboard, this application is expected to provide an efficient and smooth user experience, ensuring customer satisfaction while maintaining industry-standard performance and security.
+The MedPlus Clone aims to provide an efficient and user-friendly platform for customers to purchase medicines, upload prescriptions, and track orders. By integrating essential features such as secure payment methods, real-time order tracking, pharmacy partner portals, and an admin dashboard, this application is expected to provide an efficient and smooth user experience, ensuring customer satisfaction while maintaining industry-standard performance and security.
